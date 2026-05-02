@@ -25,6 +25,4 @@ variable "key_name" {
 variable "certificate_arn" {
   description = "ARN of the ACM SSL certificate for the HTTPS listener"
   type        = string
-  # Set this to your actual ACM certificate ARN, e.g.:
-  # default = "arn:aws:acm:us-east-1:123456789012:certificate/abc-xyz"
 }
