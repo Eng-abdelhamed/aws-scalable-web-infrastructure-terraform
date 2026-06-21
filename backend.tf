@@ -11,7 +11,7 @@ terraform {
     bucket         = "Apolloos3Back"
     key            = "production/terraform.tfstate"
     region         = "us-east-1"
-    use_lockfile = "terraform-state-lock"
+    use_lockfile = true
     encrypt        = true
   }
 }
