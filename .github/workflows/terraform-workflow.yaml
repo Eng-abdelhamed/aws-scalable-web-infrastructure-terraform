@@ -6,7 +6,7 @@ on:
       - 'main'
  pull_request:
 
-jops:
+jobs:
   Terraform:
     name: Terraform Validation
     runs-on: ubuntu-latest
