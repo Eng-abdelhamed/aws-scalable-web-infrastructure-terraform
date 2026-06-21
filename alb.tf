@@ -91,7 +91,7 @@ resource "aws_lb_listener" "HTTP-Redirect" {
     redirect {
       port        = "80"
       protocol    = "HTTP"
-      status_code = "200"
+      status_code = "HTTP_301"
     }
   }
 }
