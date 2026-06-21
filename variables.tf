@@ -21,8 +21,3 @@ variable "key_name" {
   type        = string
   default     = "NorthVirginia"
 }
-
-variable "certificate_arn" {
-  description = "ARN of the ACM SSL certificate for the HTTPS listener"
-  type        = string
-}
