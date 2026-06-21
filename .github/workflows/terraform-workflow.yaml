@@ -1,0 +1,27 @@
+name: Terraform Workflow
+
+on:
+ push:
+  branches:
+      - 'main'
+ pull_request:
+
+jops:
+  Terraform:
+    name: Terraform Validation
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/Checkout@v5
+
+      - name: Setup Terraform
+        uses: hashicorp/setup-terraform@v4
+
+      - name: Terraform Format
+        run: terraform fmt -check -recursive
+
+      - name: Terraform Init
+        run: terraform Init
+        
+      - name: Terraform Validation
+        run:  terraform validate
