@@ -2,10 +2,6 @@ data "aws_availability_zones" "available" {
   state = "available"
 }
 
-data "aws_key_pair" "SSHKey" {
-  key_name = var.key_name
-}
-
 output "PublicSubnet1_ID" {
   description = "ID of Public Subnet 1"
   value       = aws_subnet.PublicSubnet1.id
