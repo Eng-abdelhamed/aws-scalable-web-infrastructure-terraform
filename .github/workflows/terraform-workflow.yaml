@@ -21,7 +21,7 @@ jobs:
         run: terraform fmt -check -recursive
 
       - name: Terraform Init
-        run: terraform Init
+        run: terraform init
         
       - name: Terraform Validation
         run:  terraform validate
